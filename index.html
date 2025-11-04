@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spawell Wellness</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&family=Cormorant+Garamond&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Hamburger toggle (visible on mobile) -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <!-- Mobile navigation menu -->
+  <ul class="mobile-nav" id="mobileMenu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Us</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact Us</a></li>
+    <li>
+      <a href="#contact" class="btn btn-primary">Book Appointment</a>
+    </li>
+  </ul>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo.svg" alt="Spawell Logo" />
+        </a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li class="dropdown">
+          <a href="#">Pages ▼</a>
+          <ul class="dropdown-menu">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+      <a href="#contact" class="nav-btn desktop-only">Book Appointment</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+
+    <div class="hero-grid">
+      <div class="hero-text">
+        <div class="hero-animate">
+          <p class="hero-tagline">Step into Spa Rituals — where tranquility meets transformation.</p>
+        </div>
+        <h1 class="animated-text">Experience The Art of True</h1>
+        <h2 class="animated-text"> Rejuvenation</h2>
+        <div class="hero-animate">
+          <p>
+            At Spa Rituals, every moment is designed to help you unwind and rediscover your
+            natural harmony. From soothing massages and Ayurvedic therapies to advanced skincare treatments,
+            our goal is to bring you peace, renewal, and radiance — inside and out.
+          </p>
+        </div>
+        <div class="hero-buttons">
+          <a href="#contact" class="hero-btn primary">Book An Appointment</a>
+          <a href="#services" class="hero-btn secondary">Explore Our Services →</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="assets/images/spa-woman.png" alt="Spa Therapist" />
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section id="services" class="services-page">
+      <div class="services-container">
+        <h2 class="section-heading">Our Services</h2>
+
+        <div class="slider-wrapper">
+          <button class="arrow left">&#171;</button>
+
+          <div class="slider-track">
+            <!-- Your service cards -->
+            <div class="service-card">
+
+              <h3>Thai Dry Therapy</h3>
+              <p>Traditional healing massage using rhythmic stretches and pressure points to promote<span
+                  class="custom-font"> flexibility and deep relaxation.</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Swedish Therapy</h3>
+              <p>Classic European massage with long strokes and
+                gentle kneading that enhances circulation and relaxes
+                tired muscles.</p>
+            </div>
+
+            <div class="service-card">
+
+              <h3>Royal Herbal Compress</h3>
+              <p>Thai herbal pouch massage that soothes muscle tension and inflammation with natural healing herbs.</p>
+            </div>
+
+            <div class="service-card">
+
+              <h3>Balinese Therapy</h3>
+              <p>Holistic massage combining acupressure, skin rolling, and stroking to stimulate blood flow and relieve
+                stress.</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Aroma Therapy</h3>
+              <p>A calming massage using essential oils tailored to your
+                mood, leaving the body and mind deeply relaxed and
+                refreshed.</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Elements Therapy</h3>
+              <p>A signature blend of massage techniques designed to
+                harmonize body and mind, releasing fatigue and
+                restoring inner balance.</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Deep Tissue Therapy</h3>
+              <p>Targets deeper muscle layers with firm pressure to
+                relieve chronic aches, stiffness, and stress-related
+                tension</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Lomi Lomi Therapy</h3>
+              <p>A traditional Hawaiian healing massage combining long,
+                flowing, wave-like strokes with the gentle warmth of
+                smooth stone</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Jet Lag Elimination with Steam</h3>
+              <p>Includes body polishing with natural crystal salts.
+                Followed by stem and a rejuvenating Swedish
+                massage.</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Body Wrap Therapy </h3>
+              <p>A full-body exfoliation and wrap that nourishes the
+                skin, removes impurities, and leaves you glowing and
+                refreshed followed by Oil Therapy</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Body Scrubs</h3>
+              <p>Gentle exfoliation with natural scrubs to remove dead
+                skin cells, leaving the skin smooth, soft, and radiant</p>
+            </div>
+            <div class="service-card">
+
+              <h3>Couple Spa</h3>
+              <p>TA romantic shared spa journey where both partners
+                enjoy synchronized massages in a calming, intimate
+                setting</p>
+            </div>
+            <!-- Repeat other cards as you already have -->
+          </div>
+
+          <button class="arrow right">&#187;</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-container">
+        <div class="about-image">
+          <img src="assets/images/about-spa.jpeg" alt="Spa ambiance" />
+        </div>
+        <div class="about-text">
+          <h2 class="about-heading">About Us</h2>
+          <div class="para-text">
+            <p>
+              At Spa Rituals,we believe that wellness is more than a treatment— it’s an
+              experience. Our philosophy blends ancient Ayurvedic wisdom with modern therapeutic techniques to deliver
+              holistic care that rejuvenates your body, calms your mind, and uplifts your spirit.
+            </p>
+            <p>
+              Our team of certified therapists and wellness experts are passionate about
+              personalizing each session to your needs. Whether you’re seeking a peaceful escape, a revitalizing
+              massage,
+              or a full wellness journey, Spa Rituals offers an atmosphere of calm and compassion where your well-being
+              comes first.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="gallery" class="gallery-section">
+      <h2>Our Gallery</h2>
+      <div class="gallery-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="massage">Massage</button>
+        <button class="filter-btn" data-filter="facial">Facial</button>
+        <button class="filter-btn" data-filter="ambiance">Ambiance</button>
+      </div>
+
+      <div class="gallery-grid">
+        <a href="assets/images/ambiance3.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance3.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance4.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance4.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance5.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance5.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance6.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance6.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance7.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance7.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance8.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance8.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance9.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance9.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance10.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance10.JPG" alt="Zen garden view" />
+        </a>
+
+        <a href="assets/images/gallery4.jpg" data-lightbox="spa-gallery" data-title="Aromatherapy setup"
+          data-category="ambiance">
+          <img src="assets/images/gallery4.jpg" alt="Aromatherapy setup" />
+        </a>
+        <a href="assets/images/gallery5.jpg" data-lightbox="spa-gallery" data-title="Facial treatment"
+          data-category="facial">
+          <img src="assets/images/gallery5.jpg" alt="Facial treatment" />
+        </a>
+        <a href="assets/images/ambiance1.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance1.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance2.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance2.JPG" alt="Zen garden view" />
+        </a>
+
+        <a href="assets/images/massage1.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage1.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage2.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage2.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage3.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage3.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage4.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage4.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage5.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage5.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage6.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage6.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage7.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage7.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage8.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage8.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage10.jpg" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage10.jpg" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage11.jpg" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage11.jpg" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage12.jpg" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage12.jpg" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage13.jpg" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage13.jpg" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/massage9.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="massage">
+          <img src="assets/images/massage9.JPG" alt="Zen garden view" />
+        </a>
+        <a href="assets/images/ambiance11.JPG" data-lightbox="spa-gallery" data-title="Zen garden view"
+          data-category="ambiance">
+          <img src="assets/images/ambiance11.JPG" alt="Zen garden view" />
+        </a>
+
+      </div>
+    </section>
+    <section class="offer-banner">
+      <img src="assets/images/offer-flyer.jpg" alt="Weekdays Happy Hour Offer" />
+    </section>
+
+    <section id="testimonials" class="testimonial-highlight">
+      <div class="testimonial-hero">
+        <h2>Client Testimonials</h2>
+        <p>Real stories. Real rejuvenation.</p>
+      </div>
+
+      <div class="testimonial-body">
+        <div class="testimonial-image">
+          <img src="assets/images/massage-woman.jpg" alt="Spa Experience" />
+        </div>
+
+        <div class="testimonial-slider">
+          <div class="testimonial-track">
+            <div class="testimonial-content">
+              <h3 class="reviewer-name">Nilanjan Roy</h3>
+              <p class="reviewer-title">Local Guide·70 reviews·23 photos</p>
+              <p class="testimonial-text">
+                “I was here about a week ago. Had a fantastic experience here.Unlike most of the spas in Kolkata, which
+                deal
+                mostly in shady activities, this is one spa where you will get the treatment you require and deserve.The
+                lady at the front desk was attentive to my requirement.The room was clean, quiet and serene.Hygiene was
+                taken care of very well.The therapist was very well trained and professional and did a very nice job.
+                Highly recommended.”
+              </p>
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <!-- Review 2 -->
+            <div class="testimonial-content">
+              <h3 class="reviewer-name">Jessica Sarkar</h3>
+              <p class="reviewer-title">5-star review · Google</p>
+              <p class="testimonial-text">“I had a fantastic experience experience at Spa Rituals the ambience was
+                relaxing clean & very professional. A special shoutout to Farah who was incredibly skilled & attentive
+                throughout the session. They made me feel completely at ease
+                ”</p>
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-content">
+              <h3 class="reviewer-name">Heeba Haque</h3>
+              <p class="reviewer-title">5-star review · Google</p>
+              <p class="testimonial-text">“I was blown away by the exceptional service. From the moment i walked in ,i
+                felt welcome and relaxed. The therapy was amazing as well as the therapist. I took body polishing and my
+                skin as never looked and felt better. I wanna visit every month.”</p>
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <div class="testimonial-content">
+              <h3 class="reviewer-name">Kanyaphut Khwanmongkol</h3>
+              <p class="reviewer-title">5-star review · Google</p>
+              <p class="testimonial-text">“Spa Rituals exceeded my expectations. The staff were attentive and
+                knowledgeable and the spa was so clean and hygienic. I loved the deep tissue massage .”</p>
+              <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+            </div>
+            <!-- Add more reviews here -->
+
+          </div>
+          <p class="swipe-hint">Swipe to see more reviews →</p>
+        </div>
+    </section>
+    <section id="features" class="features-section">
+      <div class="features-wrapper">
+        <!-- Left Column: Text -->
+        <div class="features-intro">
+          <h2>Discover the Art of Rejuvenation</h2>
+          <p>Each ritual is carefully crafted to restore balance, awaken inner energy,
+            and elevate wellness through timeless healing traditions.</p>
+          <a href="#contact" class="features-button">Contact Us ↗</a>
+        </div>
+
+        <!-- Right Column: Feature Grid -->
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🌿</div>
+            <h4>Tranquil Ambience</h4>
+            <p>Our center is designed to provide a peaceful and serene environment.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">💆‍♀️</div>
+            <h4>Skilled Therapists</h4>
+            <p>Our team consists of experienced and certified professionals.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🍃</div>
+            <h4>Natural Products</h4>
+            <p>We use only high-quality, natural ingredients in our treatments.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h4>Customized Treatments</h4>
+            <p>Each therapy is tailored to meet your individual needs.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🛁</div>
+            <h4>Hygienic Facilities</h4>
+            <p>We maintain the highest standards of spa hygiene.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📅</div>
+            <h4>Easy Online Booking</h4>
+            <p>Schedule your appointment with ease through our user-friendly platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="trust" class="trust-section">
+      <div class="trust-wrapper">
+        <!-- Left: Text -->
+        <div class="trust-content">
+          <h2>Rooted in Ancient Wisdom, Designed for Modern Wellness</h2>
+          <p class="trust-description">
+            At Spa Rituals, we believe true beauty begins with inner balance. Every
+            treatment we offer is inspired by time-honored healing traditions — from Ayurveda and aromatherapy to
+            mindful touch therapy. We do not rush an experience; we create a space where energy calms, the mind resets
+            and the body begins its natural healing process.
+          </p>
+          <ul class="trust-list">
+            <li>
+              <h4>Our philosophy is simple</h4>
+              <p>wellness should be soulful, intentional and deeply personal. That’s
+                why every ritual is tailored to your unique body energy, emotional state and lifestyle needs — guiding
+                you gently back to harmony.
+              </p>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- Right: Image -->
+        <div class="trust-image">
+          <img src="assets/images/massage-oval.png" alt="Relaxed Client" />
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="contact-section">
+      <h2>Book Your Appointment</h2>
+      <form id="bookingForm" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="text" name="phone" placeholder="Your Contact Number" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="service" required>
+          <option value="">Select Service</option>
+          <option value="Massage Therapy">Massage Therapy</option>
+          <option value="Facial Treatment">Facial Treatment</option>
+          <option value="Body Wrap">Body Wrap</option>
+        </select>
+        <input type="date" name="date" required />
+        <textarea name="notes" placeholder="Additional Notes (optional)"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+      <div id="confirmationMessage" style="display:none; color:green; margin-top:10px;">
+        ✅ Your appointment has been booked successfully!
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; Step inside Spa Rituals — and step away from the world. 🌸</p>
+      <div class="social-links">
+        <a href="tel:+918336915555" class="call-float" aria-label="Call Us">
+          <img src="assets/icons/phone-icon.png" alt="Call Us" />
+        </a>
+        <a href="https://share.google/FTDKVtEU9sgcZpHnx" target="_blank" aria-label="Location">
+          <img src="assets/icons/location.png" alt="Location Icon" />
+        </a>
+        <a href="https://www.facebook.com/sparitualskolkata" target="_blank" aria-label="Facebook">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/sparitualskolkata?igsh=d3gzamVwbWwybmxo"><img
+            src="assets/icons/instagram.svg" alt="Instagram" /></a>
+        <a href="#"><img src="assets/icons/twitter.svg" alt="Twitter" /></a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-buttons">
+    <a href="https://wa.me/918336915555" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+      <img src="assets/images/whatsapp-icon.svg" alt="WhatsApp" />
+    </a>
+    <a href="tel:+918336915555" class="call-float" aria-label="Call Us">
+      <img src="assets/images/phone-icon.svg" alt="Call Us" />
+    </a>
+  </div>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('http://localhost:3000/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        if (response.ok) {
+          // ✅ Show confirmation
+          document.getElementById('confirmationMessage').style.display = 'block';
+          e.target.reset();
+
+          // ✅ Redirect to WhatsApp
+          const message = `Hi Spa Rituals, this is ${data.name}.\nI just booked a ${data.service} session on ${data.date}.\nPhone: ${data.phone}\nEmail: ${data.email}\nNotes: ${data.notes || 'None'}`;
+          window.location.href = `https://wa.me/918336915555?text=${encodeURIComponent(message)}`;
+        } else {
+          alert(result.message || 'Booking failed. Please try again.');
+        }
+      } catch (err) {
+        console.error('Error submitting booking:', err);
+        alert('Something went wrong. Please try again.');
+      }
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    function revealGalleryItems() {
+      const galleryItems = document.querySelectorAll('.gallery-grid a');
+      const triggerBottom = window.innerHeight * 0.9;
+
+      galleryItems.forEach(item => {
+        const boxTop = item.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          item.classList.add('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealGalleryItems);
+    window.addEventListener('load', revealGalleryItems);
+  </script>
+  <script>
+    document.getElementById('menuToggle').addEventListener('click', () => {
+      document.getElementById('navLinks').classList.toggle('show');
+    });
+  </script>
+  <script>
+    function revealHero() {
+      const hero = document.querySelector('.hero-content');
+      const triggerBottom = window.innerHeight * 0.9;
+      const boxTop = hero.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        hero.classList.add('visible');
+      }
+    }
+
+    window.addEventListener('scroll', revealHero);
+    window.addEventListener('load', revealHero);
+  </script>
+  <script>
+    function zoomHeroBackground() {
+      const hero = document.querySelector('.hero');
+      const triggerBottom = window.innerHeight * 0.9;
+      const boxTop = hero.getBoundingClientRect().top;
+
+      if (boxTop < triggerBottom) {
+        hero.classList.add('zoomed');
+      }
+    }
+
+    window.addEventListener('scroll', zoomHeroBackground);
+    window.addEventListener('load', zoomHeroBackground);
+  </script>
+  <script>
+    function revealServiceCards() {
+      const cards = document.querySelectorAll('.service-card');
+      const triggerBottom = window.innerHeight * 0.9;
+
+      cards.forEach((card, index) => {
+        const boxTop = card.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) {
+          setTimeout(() => {
+            card.classList.add('visible');
+          }, index * 150); // stagger delay
+        }
+      });
+    }
+
+    window.addEventListener('scroll', revealServiceCards);
+    window.addEventListener('load', revealServiceCards);
+  </script>
+  <script>
+    function revealAboutSection() {
+      const image = document.querySelector('.about-image');
+      const text = document.querySelector('.about-text');
+      const triggerBottom = window.innerHeight * 0.9;
+
+      if (image.getBoundingClientRect().top < triggerBottom) {
+        image.classList.add('visible');
+      }
+
+      if (text.getBoundingClientRect().top < triggerBottom) {
+        text.classList.add('visible');
+      }
+    }
+
+    window.addEventListener('scroll', revealAboutSection);
+    window.addEventListener('load', revealAboutSection);
+  </script>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-grid a');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.getAttribute('data-filter');
+
+        // Update active button
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        // Show/hide gallery items
+        galleryItems.forEach(item => {
+          const category = item.getAttribute('data-category');
+          if (filter === 'all' || category === filter) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+    const track = document.querySelector('.slider-track');
+
+    leftArrow.addEventListener('click', () => {
+      track.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    rightArrow.addEventListener('click', () => {
+      track.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('show');
+    }
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const textEl = document.querySelector(".animated-text");
+      const text = textEl.textContent;
+      textEl.textContent = "";
+
+      [...text].forEach((char, i) => {
+        const span = document.createElement("span");
+        span.textContent = char;
+
+        // Preserve space width
+        if (char === " ") {
+          span.style.width = "0.2em"; // Adjust spacing as needed
+        }
+
+        span.style.animation = `fadeLetter 0.5s ease forwards`;
+        span.style.animationDelay = `${i * 0.05}s`;
+        textEl.appendChild(span);
+      });
+    });
+
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".service-card");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, {
+        threshold: 0.2
+      });
+
+      cards.forEach((card, index) => {
+        card.style.setProperty('--delay', `${index * 0.2}s`);
+        observer.observe(card);
+      });
+    });
+
+  </script>
+
+  <script>document.getElementById('bookingForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      // ... your fetch logic ...
+      document.getElementById('confirmationMessage').classList.add('show');
+    });
+  </script>
+  <script>function animateLetters(selector) {
+      const el = document.querySelector(selector);
+      const text = el.textContent;
+      el.textContent = '';
+      text.split('').forEach((char, i) => {
+        const span = document.createElement('span');
+        span.textContent = char;
+        span.style.opacity = 0;
+        span.style.animation = `fadeInLetter 0.5s ease forwards`;
+        span.style.animationDelay = `${i * 0.05}s`;
+        el.appendChild(span);
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      animateLetters('.about-heading');
+    });
+  </script>
+  <script>const aboutParas = document.querySelectorAll('.about-text p');
+    const aboutObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    aboutParas.forEach((p, i) => {
+      p.style.transitionDelay = `${i * 0.2}s`;
+      aboutObserver.observe(p);
+    });
+  </script>
+  <script>document.addEventListener("DOMContentLoaded", () => {
+      const heroParas = document.querySelectorAll(".hero-animate p");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      }, { threshold: 0.2 });
+
+      heroParas.forEach((p, i) => {
+        p.style.transitionDelay = `${i * 0.2}s`;
+        observer.observe(p);
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href').substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          e.preventDefault(); // Prevent default jump
+          targetEl.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const testimonialTrack = document.querySelector('.testimonial-track');
+
+      if (!testimonialTrack) {
+        console.warn('testimonial-track not found');
+        return;
+      }
+
+      let currentIndex = 0;
+      const testimonials = testimonialTrack.querySelectorAll('.testimonial-content');
+      const total = testimonials.length;
+
+      setInterval(() => {
+        currentIndex = (currentIndex + 1) % total;
+        testimonialTrack.scrollTo({
+          left: testimonialTrack.offsetWidth * currentIndex,
+          behavior: 'smooth'
+        });
+      }, 5000);
+    });
+  </script>
+
+
+  <script>
+    const testimonialItems = document.querySelectorAll('.testimonial-content');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        } else {
+          entry.target.classList.remove('visible');
+        }
+      });
+    }, {
+      root: document.querySelector('.testimonial-slider'),
+      threshold: 0.5
+    });
+
+    testimonialItems.forEach(item => observer.observe(item));
+  </script>
+
+
+</body>
+
+</html>
